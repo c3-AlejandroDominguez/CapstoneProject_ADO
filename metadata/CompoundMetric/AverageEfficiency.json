@@ -1,0 +1,6 @@
+{
+  "id" : "AverageEfficiency",
+  "name" : "AverageEfficiency",
+  "description" : "Calculates the average efficiency for each city based on the smart bulbs data. It provides insights into the efficiency levels across different cities, allowing for comparisons and identification of trends in efficiency.",
+  "expression" : "(AveragePower != 0) && (AverageLumensCity != 0) ? (AverageLumensCity / AveragePower) : 0"
+}

@@ -1,0 +1,25 @@
+{
+  "type": "UiSdlConnected<UiSdlContainer>",
+  "component": {
+    "title": "Building 3 (bld3)",
+    "orientation": "HORIZONTAL",
+    "children": [
+      {
+        "type": "UiSdlMetricTile",
+        "icon": "INFO_CIRCLE",
+        "id": "capstoneproject.bld3AverageVoltage"
+      },
+      {
+        "type": "UiSdlMetricTile",
+        "icon": "INFO_CIRCLE",
+        "id": "capstoneproject.bld3AverageLumens"
+      },
+      {
+        "type": "UiSdlMetricTile",
+        "icon": "INFO_CIRCLE",
+        "id": "capstoneproject.bld3AverageTemperature"
+      }
+    ]
+  },
+  "id": "capstoneproject.bld3container"
+}

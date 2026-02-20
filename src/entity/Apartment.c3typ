@@ -1,0 +1,20 @@
+/**
+ * Type for apartment entity.
+ */
+entity type Apartment schema name "APARTMENT" {
+
+  /**
+   * The unique identifier for this apartment.
+   */
+  id: string
+  /**
+   * The building this apartment is in.
+   */
+  building: !Building
+
+  /**
+   * The fixtures in the apartment
+   */
+   fixtures: [Fixture](apartment)
+
+}

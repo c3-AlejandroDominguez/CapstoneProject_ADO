@@ -1,0 +1,29 @@
+{
+  "type": "UiSdlConnected<UiSdlMetricTile>",
+  "component": {
+    "header": {
+      "title": "Average Power"
+    },
+    "showSparkline": true, 
+    "noTimeZoneConversion": true, 
+    "dataSpec": {
+    "dataType": "City",
+    "historicSparkline": {
+        "metricName": "AveragePower",
+        "showUnitAsPrefix": true,
+        "precision": 2,
+        "evaluateAction": "EVAL",
+        "interval": "HOUR",
+        "timeHorizon": "7DAYS",
+        "entityId": "${SelectedCity}"
+      },
+      "contextVars": {
+        "SelectedCity": {
+          "type": "UiSdlPageParam",
+          "path" : "capstoneproject.dropdownfilterValue"
+        }
+      }
+    }
+  },
+  "id": "capstoneproject.GridLayoutAveragePower"
+}

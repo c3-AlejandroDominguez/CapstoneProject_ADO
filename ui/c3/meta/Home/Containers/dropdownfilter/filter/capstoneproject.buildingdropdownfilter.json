@@ -1,0 +1,19 @@
+{
+  "type": "UiSdlConnected<UiSdlSingleSearch>",
+  "component": {
+    "fluid": false,
+    "wrapWithMetadataId": true,
+    "searchOperator": "CONTAINS",
+    "dataSpec": {
+      "dataType": "Building",
+      "actionName": "fetch",
+      "dataPath": "objs",
+      "valueField": "id",
+      "displayField": "name"
+    },
+    "displayField": "name",
+    "valueField": "id",
+    "submittable": true,
+    "clear": true
+  }
+}

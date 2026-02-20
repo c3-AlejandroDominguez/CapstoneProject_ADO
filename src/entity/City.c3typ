@@ -1,0 +1,32 @@
+/**
+ * Represents a city with smart bulb installations.
+ */
+entity type City mixes SeedData<City>, FeatureEvaluatable schema name "CITY" {
+    
+    id : !string
+    /**
+     * The name of the city.
+     */
+    name: !string
+    
+    /**
+     * The latitude coordinate of the city.
+     */
+    latitude: double
+    
+    /**
+     * The longitude coordinate of the city.
+     */
+    longitude: double
+    
+    /**
+     * The electricity rate for the city in dollars per kWh.
+     */
+    electricityRate: double
+    
+    /**
+     * The buildings located in this city.
+     */
+     @db(order="ascending(name)")
+    buildings : [Building](city)
+}

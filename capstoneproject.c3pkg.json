@@ -1,0 +1,9 @@
+{
+	"author" : "Alejandro Dominguez",
+	"name" : "capstoneproject",
+	"description" : "Purpose of this package is to create a capstone project for the C3 AI course.",
+	"version" : "1.0.0",
+	"dependencies" : {
+    	"uiComponentLibraryReact" : "8.6"
+  }
+}

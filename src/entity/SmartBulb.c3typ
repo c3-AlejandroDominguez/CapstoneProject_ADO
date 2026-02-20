@@ -1,0 +1,70 @@
+/** 
+* A single {@link SmartBulb}.
+*/
+extendable entity type SmartBulb mixes FeatureEvaluatable schema name "SMART_BULB" {
+
+    /**
+     * The bulb type for this bulb.
+     */ 
+    bulbType: !string 
+    
+    /**
+     * The light bulb's wattage.
+     */ 
+    wattage: !decimal
+
+    /**
+     * The name of this bulb's manufacturer.
+     */  
+    manufacturer: !string 
+    
+    /**
+     * The time at which this bulb was manufactured.
+     */ 
+    startDate: !datetime
+    
+    /**
+     * The measurements associated with this smart bulb.
+     */
+     @db(order="descending(meta.created)")
+    bulbMeasurements : [SmartBulbMeasurementSeries](smartBulb)
+
+    /**
+     * The current fixture this bulb is installed in.
+     */
+    currentFixture : Fixture stored calc exists(fixtureHistory) ? fixtureHistory[0].to : null
+
+    /**
+     * The history of fixtures this bulb has been installed in.
+     */
+    @db(order="descending(start)")
+    fixtureHistory : [SmartBulbToFixtureRelation](from) 
+
+    /**
+     * Calculate the monthly electricity bill for this smart bulb.
+     * Uses the electricity rate from {@link CityRateConfig} based on the city
+     * where the bulb is currently installed.
+     * 
+     * @param month The month to calculate the bill for (1-12)
+     * @param year The year to calculate the bill for
+     * @return The total electricity cost for the month in dollars
+     */
+    monthlyBill : member function(month : int, year : int) : double js-server
+
+    /**
+        * Calculate the remaining lifespan of the bulb in hours.
+    */
+    remainingLifespanInHours : member function() : int js-server
+
+    /**
+     * The current status of the bulb based on the latest measurement.
+     * 0 = Off, 1 = On, 2 = Burned Out
+     * This is a stored calculated property that retrieves the latest status from measurements.
+    */
+    bulbStatus : int stored calc exists(bulbMeasurements) ? bulbMeasurements[0].lastStatus : null
+
+
+    electricityRate: double stored calc exists(currentFixture) ? currentFixture.apartment.building.city.electricityRate: null 
+
+    currentCity: string stored calc exists(currentFixture) ? currentFixture.apartment.building.city.name: null 
+}

@@ -1,0 +1,16 @@
+/**
+ * Fill in type description here.
+ */
+entity type INCANBulb extends SmartBulb type key "INCAN_BULB" {
+
+  /**
+   * The lifespan of the incandescent bulb in hours.
+   */
+  lifeSpanInHours: int = 5000
+
+  /**
+   * The energy efficiency factor of the incandescent bulb.
+   */
+  efficiencyFactor: double = 0.45
+  
+}

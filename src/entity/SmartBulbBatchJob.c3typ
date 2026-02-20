@@ -1,0 +1,33 @@
+/**
+ * BatchJob for processing SmartBulb measurement data.
+ * 
+ * This batch job:
+ * - Reads CSV files from FileSystem in batches based on batchSize
+ * - Validates data quality and filters problematic rows
+ * - Creates SourceFiles for SmartBulbMeasurementSeries (unique devices)
+ * - Creates SourceFiles for SmartBulbMeasurement (measurement data)
+ * - Triggers data integration on all files when complete
+ * 
+ * Configuration:
+ * - batchSize: Number of files to process per batch (default: 2)
+ * - removeDigits: Whether to remove digits from device IDs (default: false)
+ */
+type SmartBulbBatchJob extends BatchJob<SmartBulbBatchJob, BatchJobSmartBulbMeasurementOptions, BatchSmartBulbMeasurement> type key 'SMARTBULB_BATCH_JOB' {
+   /**
+    * Initialize and start the batch job.
+    * Divides file URLs into batches based on batchSize.
+    */
+  doStart: ~ py-server
+  
+  /**
+   * Process a single batch of CSV files.
+   * Reads, validates, filters data and creates SourceFiles.
+   */
+  processBatch: ~ py-server
+  
+  /**
+   * Execute when all batches are complete.
+   * Triggers data integration on all created SourceFiles.
+   */
+  allComplete:  ~ py-server
+}

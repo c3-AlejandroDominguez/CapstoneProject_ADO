@@ -1,0 +1,15 @@
+{
+  "type": "UiSdlConnected<UiSdlContainer>",
+  "component": {
+    "title": "Core Features",
+    "children": [
+      {
+        "id": "capstoneproject.buildingdropdownfiltercontainer"
+      },
+      {
+        "id": "capstoneproject.corefeaturesgraphic"
+      }
+    ]
+  },
+  "id": "capstoneproject.corefeaturescontainer"
+}

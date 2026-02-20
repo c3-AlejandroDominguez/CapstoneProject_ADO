@@ -1,0 +1,23 @@
+{
+  "type": "UiSdlConnected<UiSdlMetricTile>",
+  "component": {
+    "header": {
+      "title": "Average Temperature"
+    },
+    "showSparkline": true, 
+    "noTimeZoneConversion": true, 
+    "dataSpec": {
+    "dataType": "Building",
+    "historicSparkline": {
+        "metricName": "AverageTemperature",
+        "showUnitAsPrefix": true,
+        "precision": 2,
+        "evaluateAction": "EVAL",
+        "interval": "HOUR",
+        "timeHorizon": "7DAYS",
+        "entityId": "bld2"
+      }
+    }
+  },
+  "id": "capstoneproject.bld2AverageTemperature"
+}

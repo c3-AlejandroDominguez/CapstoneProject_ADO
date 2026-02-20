@@ -1,0 +1,23 @@
+{
+  "type": "UiSdlConnected<UiSdlMetricTile>",
+  "component": {
+    "header": {
+      "title": "Average Voltage"
+    },
+    "showSparkline": true, 
+    "noTimeZoneConversion": true, 
+    "dataSpec": {
+    "dataType": "Building",
+    "historicSparkline": {
+        "metricName": "AverageVoltage",
+        "showUnitAsPrefix": true,
+        "precision": 2,
+        "evaluateAction": "EVAL",
+        "interval": "HOUR",
+        "timeHorizon": "7DAYS",
+        "entityId": "bld3"
+      }
+    }
+  },
+  "id": "capstoneproject.bld3AverageVoltage"
+}

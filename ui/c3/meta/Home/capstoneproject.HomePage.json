@@ -1,0 +1,41 @@
+{
+  "type": "UiSdlConnected<UiSdlGridLayout>",
+  "component": {
+    "navMenu": {
+      "id": "capstoneproject.NavMenu"
+    },
+    "detachedFields":[
+      {
+        "id": "capstoneproject.BuildingModalForm"
+      }
+    ],
+    "children": [
+          {
+            "type": "UiSdlGridContainer",
+            "gutter": 16,
+            "display": "VERTICAL",
+            "children": [
+              {
+                "type": "UiSdlComponentContainer",
+                "childComponent": {
+                  "id": "capstoneproject.maincontainerkpis"
+                }
+              },
+              {
+                "type": "UiSdlComponentContainer",
+                "childComponent": {
+                  "id": "capstoneproject.corefeaturescontainer"
+                }
+              },
+              {
+              "type": "UiSdlGridContainer",
+              "column": 16,
+              "childComponent": {
+                "id": "Building.tables"
+                }
+              }
+            ]
+      }      
+    ]
+  }
+}

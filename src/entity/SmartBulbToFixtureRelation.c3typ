@@ -1,0 +1,30 @@
+/**
+ * Represents the relationship between a SmartBulb and a Fixture over a time period.
+ * Tracks which bulb was installed in which fixture and when.
+ */
+entity type SmartBulbToFixtureRelation schema name "SMART_BULB_TO_FIXTURE_RELATION" {
+  /**
+   * The unique identifier for this relationship.
+   */
+  id: string
+
+  /**
+   * The SmartBulb in this relationship.
+   */
+  from : !SmartBulb
+
+  /**
+   * The Fixture in this relationship.
+   */
+  to: !Fixture
+
+  /**
+   * The start datetime when this bulb was installed in the fixture.
+   */
+  start: datetime
+
+  /**
+   * The end datetime when this bulb was removed from the fixture.
+   */
+  end: datetime
+}

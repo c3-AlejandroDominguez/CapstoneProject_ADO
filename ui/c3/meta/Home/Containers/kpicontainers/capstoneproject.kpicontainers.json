@@ -1,0 +1,25 @@
+{
+  "type": "UiSdlConnected<UiSdlContainer>",
+  "component": {
+    "title": "KPI's",
+    "orientation": "HORIZONTAL",
+    "children": [
+      {
+        "type": "UiSdlMetricTile",
+        "icon": "INFO_CIRCLE",
+        "id": "capstoneproject.GridLayoutAveragePower"
+      },
+      {
+        "type": "UiSdlMetricTile",
+        "icon": "INFO_CIRCLE",
+        "id": "capstoneproject.GridLayoutAverageEfficiency"
+      },
+      {
+        "type": "UiSdlMetricTile",
+        "icon": "INFO_CIRCLE",
+        "id": "capstoneproject.GridLayoutDefectiveBulbCount"
+      }
+    ]
+  },
+  "id": "capstoneproject.kpicontainers"
+}

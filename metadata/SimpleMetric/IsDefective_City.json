@@ -1,0 +1,13 @@
+{
+  "id" : "IsDefective_City",
+  "name" : "IsDefective",
+  "description" : "Counts the number of defective bulbs in a city. A bulb is considered defective if it has lumens output (lumens > 0) but status indicates it's off (status == 0).",
+  "srcType" : "City",
+  "path" : "buildings.apartments.fixtures.bulbHistory.from.bulbMeasurements",
+  "expression" : "max(max((normalized.data.lumens <= 0) && (normalized.data.status == 1)))",
+  "cache": {
+    "intervals": ["HOUR","DAY", "MONTH"],
+    "monthsInPast": 4,
+    "monthsInFuture": 1
+  }
+}

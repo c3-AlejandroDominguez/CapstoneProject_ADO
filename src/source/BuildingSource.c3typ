@@ -1,0 +1,6 @@
+type BuildingSource mixes Source {
+  id: string
+  latitude: double
+  longitude: double
+  city: string
+}

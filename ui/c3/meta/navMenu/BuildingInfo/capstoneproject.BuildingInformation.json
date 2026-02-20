@@ -1,0 +1,49 @@
+{
+  "type": "UiSdlConnected<UiSdlGridLayout>",
+  "component": {
+    "children": [
+       {
+        "type": "UiSdlGridContainer",
+        "gutter": 16,
+        "display": "VERTICAL",
+        "children": [
+          {
+            "type": "UiSdlComponentContainer",
+            "icon": "INFO_CIRCLE",
+            "childComponent": {
+              "id": "capstoneproject.bld1container"
+            }
+          },
+          {
+            "type": "UiSdlComponentContainer",
+            "icon": "INFO_CIRCLE",
+            "childComponent": {
+              "id": "capstoneproject.bld2container"
+            }
+          },
+          {
+            "type": "UiSdlComponentContainer",
+            "icon": "INFO_CIRCLE",
+            "childComponent": {
+              "id": "capstoneproject.bld3container"
+            }
+          },
+          {
+            "type": "UiSdlComponentContainer",
+            "icon": "INFO_CIRCLE",
+            "childComponent": {
+              "id": "capstoneproject.bld4container"
+            }
+          },
+          {
+            "type": "UiSdlComponentContainer",
+            "icon": "INFO_CIRCLE",
+            "childComponent": {
+              "id": "capstoneproject.bld5container"
+            }
+          }
+        ]
+      }
+    ]
+  }  
+}

@@ -1,0 +1,10 @@
+/**
+ * Fill in type description here.
+ */
+type BatchSmartBulbMeasurement {
+
+  /**
+   * Fill in field description here.
+   */
+  values : [string]
+}

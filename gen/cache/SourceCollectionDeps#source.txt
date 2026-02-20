@@ -1,0 +1,7 @@
+ApartmentSource: ApartmentSource
+SmartBulbToFixtureRelationSource: SmartBulbToFixtureRelationSource
+FixtureSource: FixtureSource
+SmartBulbMeasurementSource: SmartBulbMeasurementSource
+SmartBulbMeasurementSeriesSource: SmartBulbMeasurementSeriesSource
+SmartBulbSource: SmartBulbSource
+BuildingSource: BuildingSource

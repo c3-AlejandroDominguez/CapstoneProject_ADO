@@ -1,0 +1,8 @@
+ApartmentSource: Canonical
+SmartBulbToFixtureRelationSource: Canonical
+FixtureSource: Canonical
+SmartBulbMeasurementSource: Canonical
+SmartBulbMeasurementSeriesSource: Canonical
+SmartBulbSource: Canonical
+BuildingSource: Canonical
+CitySource: Canonical

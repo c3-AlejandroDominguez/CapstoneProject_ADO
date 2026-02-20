@@ -1,0 +1,15 @@
+/**
+ * Fill in type description here.
+ */
+entity type CFLBulb extends SmartBulb type key "CFL_BULB" {
+
+  /**
+   * The lifespan of the CFL bulb in hours.
+   */
+  lifeSpanInHours: int = 7500
+
+  /**
+   * The energy efficiency factor of the CFL bulb.
+   */
+  efficiencyFactor: double = 0.25
+}

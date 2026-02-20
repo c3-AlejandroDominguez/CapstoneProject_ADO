@@ -1,0 +1,12 @@
+{
+  "type": "UiSdlConnected<UiSdlContainer>",
+  "component": {
+    "title": "Select City",
+    "children": [
+      {
+        "id": "capstoneproject.dropdownfilter"
+      }
+    ]
+  },
+  "id": "capstoneproject.dropdownfiltercontainer"
+}

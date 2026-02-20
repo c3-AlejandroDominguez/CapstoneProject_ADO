@@ -1,0 +1,61 @@
+{
+  "type": "UiSdlConnected<UiSdlTimeseriesLineBarChart>",
+  "component": {
+    "header": {
+      "title": "Building Metrics"
+    },
+    "xAxis": {
+      "type": "UiSdlTimeseriesLineBarChartXAxisConfig",
+      "name": "Graphic on Average Lumens, Temperature and Voltage",
+      "interval": "HOUR",
+      "startDate": "LAST_WEEK",
+      "endDate": "TODAY"
+    },
+    "yAxis": {
+      "name": "Metrics",
+      "units": true
+    },
+    "zoomEnabled": true,
+    "legend": {
+      "legendHorizontalAlignment": "LEFT"
+    },  
+
+    "noTimeZoneConversion" : true,
+    "dataSpec": {
+      "dataType": "Building",
+      "yAxisFields": [
+        {
+          "legendLabel": "Average Lumens",
+          "visualizationType": {
+            "type": "UiSdlTimeseriesLineBarChartLineVisualization"
+          },
+          "entityId": "${SelectedBuilding}",
+          "metricName": "AverageLumensBuilding"
+        },
+        {
+          "legendLabel": "Average Temperature",
+          "visualizationType": {
+            "type": "UiSdlTimeseriesLineBarChartLineVisualization"
+          },
+          "entityId": "${SelectedBuilding}",
+          "metricName": "AverageTemperature"
+        },
+        {
+          "legendLabel": "Average Voltage",
+          "visualizationType": {
+            "type": "UiSdlTimeseriesLineBarChartLineVisualization"
+          },
+          "entityId": "${SelectedBuilding}",
+          "metricName": "AverageVoltage"
+        }
+      ],
+      "contextVars": {
+        "SelectedBuilding": {
+          "type": "UiSdlPageParam",
+          "path": "capstoneproject.buildingdropdownfilterValue"
+        }
+      }
+    }
+  },
+  "id": "capstoneproject.corefeaturesgraphic"
+}

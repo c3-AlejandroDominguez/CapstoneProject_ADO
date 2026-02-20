@@ -1,0 +1,30 @@
+/**
+ * Fill in type description here.
+ */
+entity type SmartBulbMeasurementSeries mixes IntervalDataHeader<SmartBulbMeasurement>{
+
+  /**
+   * The smart bulb associated with this measurement series.
+   */
+  smartBulb : !SmartBulb
+
+
+  /**
+   * The time zone in which the measurements were taken, represented as an IANA time zone string (e.g., "America/New_York").
+   */
+  timeZone : string
+
+  /**
+   * The interval at which measurements are taken.
+   */
+  interval : string
+
+  /**
+   * The last status of the smart bulb measurement series.
+   */
+  lastStatus: int calc exists(data) ? data[0].status : null
+
+  @db(order="descending(start)")
+  data: ~
+
+}

@@ -1,0 +1,96 @@
+{
+  "summary": {
+    "totalRows": 18000,
+    "cleanRows": 17995,
+    "issueRows": 5,
+    "totalIssues": 10,
+    "processedAt": "2026-02-06T18:55:21.536Z",
+    "sourceFile": "SmartBulbMeasurement_2024-01_Part3.csv"
+  },
+  "issues": [
+    {
+      "rowNumber": 1735,
+      "issue": "INVALID_TIMESTAMP",
+      "description": "Invalid timestamp value: \"invalid_datetime\"",
+      "severity": "CRITICAL",
+      "field": "timestamp",
+      "value": "invalid_datetime"
+    },
+    {
+      "rowNumber": 1735,
+      "issue": "INVALID_STATUS",
+      "description": "Status must be 0 or 1, found: \"-1\"",
+      "severity": "CRITICAL",
+      "field": "Status",
+      "value": "-1"
+    },
+    {
+      "rowNumber": 4828,
+      "issue": "INVALID_TIMESTAMP",
+      "description": "Invalid timestamp value: \"invalid_datetime\"",
+      "severity": "CRITICAL",
+      "field": "timestamp",
+      "value": "invalid_datetime"
+    },
+    {
+      "rowNumber": 4828,
+      "issue": "INVALID_STATUS",
+      "description": "Status must be 0 or 1, found: \"-1\"",
+      "severity": "CRITICAL",
+      "field": "Status",
+      "value": "-1"
+    },
+    {
+      "rowNumber": 9348,
+      "issue": "INVALID_TIMESTAMP",
+      "description": "Invalid timestamp value: \"invalid_datetime\"",
+      "severity": "CRITICAL",
+      "field": "timestamp",
+      "value": "invalid_datetime"
+    },
+    {
+      "rowNumber": 9348,
+      "issue": "INVALID_STATUS",
+      "description": "Status must be 0 or 1, found: \"-1\"",
+      "severity": "CRITICAL",
+      "field": "Status",
+      "value": "-1"
+    },
+    {
+      "rowNumber": 13149,
+      "issue": "INVALID_TIMESTAMP",
+      "description": "Invalid timestamp value: \"invalid_datetime\"",
+      "severity": "CRITICAL",
+      "field": "timestamp",
+      "value": "invalid_datetime"
+    },
+    {
+      "rowNumber": 13149,
+      "issue": "INVALID_STATUS",
+      "description": "Status must be 0 or 1, found: \"-1\"",
+      "severity": "CRITICAL",
+      "field": "Status",
+      "value": "-1"
+    },
+    {
+      "rowNumber": 15268,
+      "issue": "INVALID_TIMESTAMP",
+      "description": "Invalid timestamp value: \"invalid_datetime\"",
+      "severity": "CRITICAL",
+      "field": "timestamp",
+      "value": "invalid_datetime"
+    },
+    {
+      "rowNumber": 15268,
+      "issue": "INVALID_STATUS",
+      "description": "Status must be 0 or 1, found: \"-1\"",
+      "severity": "CRITICAL",
+      "field": "Status",
+      "value": "-1"
+    }
+  ],
+  "issuesByType": {
+    "INVALID_TIMESTAMP": 5,
+    "INVALID_STATUS": 5
+  }
+}

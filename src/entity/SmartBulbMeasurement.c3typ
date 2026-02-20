@@ -1,0 +1,41 @@
+/**
+ * Fill in type description here.
+ */
+@db(datastore = 'kv',
+    partitionKeyField='parent',
+    persistenceOrder = 'start',
+    persistDuplicates = false,
+    compactTyp = true)
+entity type SmartBulbMeasurement mixes IntervalDataPoint<SmartBulbMeasurementSeries>{
+  /**
+   * The power consumption of the smart bulb at the time of measurement in watts.
+   */
+  @ts(treatment = "sum")
+  power : double
+
+  /**
+   * The brightness of the smart bulb at the time of measurement in lumens.
+   */ 
+  @ts(treatment = "avg")
+  lumens : double
+
+  /**
+   * The operating voltage of the smart bulb at the time of measurement in volts.
+   */
+  @ts(treatment = "avg")
+  voltage : double
+  
+  /**
+   * The operating temperature of the smart bulb at the time of measurement in degrees Celsius.
+   */
+   @ts(treatment = "avg")
+  temperature : double
+
+  /**
+   * The operational status code of the smart bulb (e.g., on/off, error states).
+   */
+   @ts(treatment = "previous")
+  status : int
+
+  // city : string stored calc parent.smartBulb.currentFixture.apartment.building.city.id
+}

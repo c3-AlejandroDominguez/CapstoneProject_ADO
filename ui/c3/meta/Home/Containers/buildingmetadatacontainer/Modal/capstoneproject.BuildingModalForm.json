@@ -1,0 +1,18 @@
+{
+  "type": "UiSdlConnected<UiSdlModal>",
+  "component": {
+    "size": "FULLSCREEN",
+    "header": {
+      "text": "Update Building Info"
+    },
+    "modalType": {
+      "type": "UiSdlOneButtonModal",
+      "primaryButtonLabel": "Close"
+    },
+    "children": [
+      {
+        "id": "capstoneproject.BuildingForm"
+      }
+    ]
+  }
+}

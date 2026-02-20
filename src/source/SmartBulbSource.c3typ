@@ -1,0 +1,27 @@
+type SmartBulbSource mixes Source {
+  /**
+   * The unique identifier for the smart bulb.
+   */
+  ID: string
+
+  /**
+   * The start date when the bulb was manufactured or installed.
+   */
+  STARTDATE: datetime
+
+  /**
+   * The type of bulb (LED, CFL, INCAN).
+   */
+  BULBTYPE: string
+
+  /**
+   * The wattage of the bulb.
+   */
+  WATTAGE: float
+
+  /**
+   * The manufacturer of the bulb.
+   */
+  MANUFACTURER: string
+  
+}

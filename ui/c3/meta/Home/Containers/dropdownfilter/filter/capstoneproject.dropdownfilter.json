@@ -1,0 +1,20 @@
+{
+  "type": "UiSdlConnected<UiSdlSingleSearch>",
+  "component": {
+    "fluid": true,
+    "wrapWithMetadataId": true,
+    "searchOperator": "CONTAINS",
+    "showSparkline": false,
+    "dataSpec": {
+      "dataType": "City",
+      "actionName": "fetch",
+      "dataPath": "objs",
+      "valueField": "id",
+      "displayField": "name"
+    },
+    "displayField": "name",
+    "valueField": "id",
+    "submittable": true,
+    "clear": true
+  }
+}

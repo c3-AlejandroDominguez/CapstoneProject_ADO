@@ -1,0 +1,29 @@
+{
+  "type": "UiSdlConnected<UiSdlMetricTile>",
+  "component": {
+    "header": {
+      "title": "Defective Bulb Count"
+    },
+    "showSparkline": true, 
+    "noTimeZoneConversion": true, 
+    "dataSpec": {
+    "dataType": "City",
+    "historicSparkline": {
+        "metricName": "DefectiveBulbCount",
+        "showUnitAsPrefix": true,
+        "precision": 2,
+        "evaluateAction": "EVAL",
+        "interval": "HOUR",
+        "timeHorizon": "7DAYS",
+        "entityId": "${SelectedCity}"
+      },
+      "contextVars": {
+        "SelectedCity": {
+          "type": "UiSdlPageParam",
+          "path" : "capstoneproject.dropdownfilterValue"
+        }
+      }
+    }
+  },
+  "id": "capstoneproject.GridLayoutDefectiveBulbCount"
+}

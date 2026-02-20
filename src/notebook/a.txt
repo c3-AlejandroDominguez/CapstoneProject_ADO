@@ -1,0 +1,42 @@
+Error invoking Python method SmartBulbBatchJob#doStart executing in runtime py-data on server using jep: ImportError: java.lang.ClassNotFoundException: Cannot load class with name: c3.BatchSmartBulbMeasurement (SmartBulbBatchJob.py#51)
+    File "/c3/platform/src/remote/ServerConnection.py-server.py", line 871, in wrapCallAndCatch
+
+    50          # Create C3 batch item using Type.newObj
+  > 51          batch_item = c3.BatchSmartBulbMeasurement.make({'values': batch_files})
+    52          batches.append(batch_item)
+
+    File "/platform/src/remote/ServerConnection.py", line 2108, in SmartBulbBatchJob#doStart$error_handling
+
+    File "/platform/src/remote/ServerConnection.py-server.py", line 867, in wrap_and_call
+
+    File "/platform/src/remote/ServerConnection.py-server.py", line 871, in wrapCallAndCatch
+
+Called from Java action SmartBulbBatchJob#dispatchDoStart
+
+Called from Java action BatchQueue#compute
+  Error invoking Python method SmartBulbBatchJob#doStart executing in runtime py-data on server using jep: ImportError: java.lang.ClassNotFoundException: Cannot load class with name: c3.BatchSmartBulbMeasurement (SmartBulbBatchJob.py#51)
+    File "/c3/platform/src/remote/ServerConnection.py-server.py", line 871, in wrapCallAndCatch
+
+    50          # Create C3 batch item using Type.newObj
+  > 51          batch_item = c3.BatchSmartBulbMeasurement.make({'values': batch_files})
+    52          batches.append(batch_item)
+
+    File "/platform/src/remote/ServerConnection.py", line 2108, in SmartBulbBatchJob#doStart$error_handling
+
+    File "/platform/src/remote/ServerConnection.py-server.py", line 867, in wrap_and_call
+
+    File "/platform/src/remote/ServerConnection.py-server.py", line 871, in wrapCallAndCatch
+
+Called from Java action SmartBulbBatchJob#dispatchDoStart
+    Error invoking Python method SmartBulbBatchJob#doStart executing in runtime py-data on server using jep: ImportError: java.lang.ClassNotFoundException: Cannot load class with name: c3.BatchSmartBulbMeasurement (SmartBulbBatchJob.py#51)
+    File "/c3/platform/src/remote/ServerConnection.py-server.py", line 871, in wrapCallAndCatch
+
+    50          # Create C3 batch item using Type.newObj
+  > 51          batch_item = c3.BatchSmartBulbMeasurement.make({'values': batch_files})
+    52          batches.append(batch_item)
+
+    File "/platform/src/remote/ServerConnection.py", line 2108, in SmartBulbBatchJob#doStart$error_handling
+
+    File "/platform/src/remote/ServerConnection.py-server.py", line 867, in wrap_and_call
+
+    File "/platform/src/remote/ServerConnection.py-server.py", line 871, in wrapCallAndCatch

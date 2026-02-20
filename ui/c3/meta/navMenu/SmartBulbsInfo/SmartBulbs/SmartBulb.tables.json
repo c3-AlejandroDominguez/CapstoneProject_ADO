@@ -1,0 +1,40 @@
+{
+    "type": "UiSdlConnected<UiSdlDataGrid>",
+    "component": {
+      "header": {
+        "title": "Smart Bulbs General Information"
+      },
+      "paginationConfig": {
+        "pageSize": 33,
+        "pagination": true
+      },
+      "reorderableColumns": false,
+      "filterBar": true,
+      "dataSpec": {
+        "dataType": "SmartBulb",
+        "columnFields": [
+          {
+            "fieldName": "id",
+            "label": "SmartBulb SN",
+            "sortable": true,
+            "searchable": true
+          },
+          {
+            "fieldName": "bulbType",
+            "label": "Bulb Type",
+            "sortable": true
+          },
+          {
+            "fieldName": "currentCity",
+            "label": "Located in",
+            "sortable": true
+          },
+          {
+            "fieldName": "currentFixture.id",
+            "label": "Current Fixture",
+            "sortable": true
+          }
+        ]
+      }
+    }
+  }

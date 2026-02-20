@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "lib": [
+      "ES2015"
+    ],
+    "checkJs": false,
+    "strictNullChecks": true
+  },
+  "typeAcquisition": {
+    "include": [
+      "jasmine",
+      "lodash"
+    ]
+  },
+  "include": [
+    "./src/**/*.js",
+    "./test/**/*.js",
+    "./gen/**/*.d.ts",
+    "/Users/alejandrodominguez/Workspaces/.vs-cache/platform/gen/**/*.d.ts",
+    "/Users/alejandrodominguez/Workspaces/.vs-cache/uiComponentLibraryReact/gen/**/*.d.ts",
+    "/Users/alejandrodominguez/Workspaces/.vs-cache/uiComponentLibrary/gen/**/*.d.ts",
+    "/Users/alejandrodominguez/Workspaces/.vs-cache/uiInfrastructure/gen/**/*.d.ts",
+    "/Users/alejandrodominguez/Workspaces/.vs-cache/cssLibrary/gen/**/*.d.ts",
+    "/Users/alejandrodominguez/Workspaces/.vs-cache/hierarchy/gen/**/*.d.ts",
+    "/Users/alejandrodominguez/Workspaces/.vs-cache/testtools/gen/**/*.d.ts",
+    "/Users/alejandrodominguez/Workspaces/.vs-cache/units/gen/**/*.d.ts",
+    "/Users/alejandrodominguez/Workspaces/.vs-cache/uiBundler/gen/**/*.d.ts",
+    "/Users/alejandrodominguez/Workspaces/.vs-cache/esPackageContainer/gen/**/*.d.ts",
+    "/Users/alejandrodominguez/Workspaces/.vs-cache/jarvis/gen/**/*.d.ts",
+    "/Users/alejandrodominguez/Workspaces/.vs-cache/documentationCompiler/gen/**/*.d.ts",
+    "/Users/alejandrodominguez/Workspaces/.vs-cache/uiPrimitives/gen/**/*.d.ts",
+    "/Users/alejandrodominguez/Workspaces/.vs-cache/uiMicrobench/gen/**/*.d.ts",
+    "/Users/alejandrodominguez/Workspaces/.vs-cache/uiInfrastructureReact/gen/**/*.d.ts",
+    "/Users/alejandrodominguez/Workspaces/.vs-cache/uiSdlReact/gen/**/*.d.ts"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id" : "AverageLumens_Building",
+  "name" : "AverageLumensBuilding",
+  "description" : "Calculates the average lumens for each building based on the smart bulbs data. It provides insights into the light output levels across different buildings, allowing for comparisons and identification of trends in lumens.",
+  "srcType" : "Building",
+  "path" : "apartments.fixtures.bulbHistory.from.bulbMeasurements",
+  "expression" : "avg(avg(normalized.data.lumens))",
+  "cache": {
+    "intervals": ["HOUR","DAY", "MONTH"],
+    "monthsInPast": 4,
+    "monthsInFuture": 1
+  }
+}

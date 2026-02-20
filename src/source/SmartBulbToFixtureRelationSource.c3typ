@@ -1,0 +1,26 @@
+type SmartBulbToFixtureRelationSource mixes Source {
+  /**
+   * The SmartBulb ID (from).
+   */
+  FROM: string
+
+  /**
+   * The Fixture ID (to).
+   */
+  TO: string
+
+  /**
+   * The start datetime of the relationship.
+   */
+  START: datetime
+
+  /**
+   * The end datetime of the relationship.
+   */
+  END: datetime
+
+  /**
+   * The unique identifier for this relationship.
+   */
+  ID: string
+}

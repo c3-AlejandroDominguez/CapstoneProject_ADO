@@ -1,0 +1,10 @@
+name,source,sourceSystem.name
+CitySource,CitySource,Canonical
+BuildingSource,BuildingSource,Canonical
+ApartmentSource,ApartmentSource,Canonical
+FixtureSource,FixtureSource,Canonical
+SmartBulbMeasurementSource,SmartBulbMeasurementSource,Canonical
+SmartBulbMeasurementSeriesSource,SmartBulbMeasurementSeriesSource,Canonical
+SmartBulbSource,SmartBulbSource,Canonical
+FixtureSource,FixtureSource,Canonical
+SmartBulbToFixtureRelationSource,SmartBulbToFixtureRelationSource,Canonical

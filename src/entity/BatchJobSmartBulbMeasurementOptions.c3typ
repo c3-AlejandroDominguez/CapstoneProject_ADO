@@ -1,0 +1,18 @@
+/**
+ * Fill in type description here.
+ */
+type BatchJobSmartBulbMeasurementOptions {
+
+  /**
+   * Fill in field description here.
+   */
+    batchSize: int = 500
+
+    files : [string] = ["azure://c3azcs/aledominguez/capstoneproject/dl/Canonical/SmartBulbMeasurementSource/inbox/SmartBulbMeasurement_2024-01_Part4.csv",
+                 "azure://c3azcs/aledominguez/capstoneproject/dl/Canonical/SmartBulbMeasurementSource/inbox/SmartBulbMeasurement_2024-01_Part3.csv",
+                 "azure://c3azcs/aledominguez/capstoneproject/dl/Canonical/SmartBulbMeasurementSource/inbox/SmartBulbMeasurement_2024-01_Part2.csv",
+                 "azure://c3azcs/aledominguez/capstoneproject/dl/Canonical/SmartBulbMeasurementSource/inbox/SmartBulbMeasurement_2024-01_Part1.csv"
+              ]
+
+
+}

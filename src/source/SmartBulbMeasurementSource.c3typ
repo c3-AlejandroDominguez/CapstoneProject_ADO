@@ -1,0 +1,43 @@
+type SmartBulbMeasurementSource mixes Source {
+  
+  /**
+   * The serial number identifying the measurement series.
+   */
+  SN: string
+
+  /**
+   * The start timestamp of the measurement.
+   */
+   @ser (name = "timestamp")
+  start: string
+
+  /**
+   * The end timestamp of the measurement.
+   */
+  end: string
+
+  /**
+   * Power consumption in watts.
+   */
+  Watts: double
+  
+  /**
+   * Light output in lumens.
+   */
+  Lumens: double
+
+  /**
+   * Temperature reading.
+   */
+  Temp: double
+  
+  /**
+   * Voltage reading.
+   */
+  Voltage: double
+  
+  /**
+   * Status code.
+   */
+  Status: int
+}

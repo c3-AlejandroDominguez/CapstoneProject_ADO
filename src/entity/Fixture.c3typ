@@ -1,0 +1,25 @@
+/**
+ * Light fixture that a single @link SmartBulb @endlink can be installed into.
+ */
+entity type Fixture schema name 'FIXTURE' {
+
+  /**
+   * The unique identifier for this fixture.
+   */
+  id: string
+
+  /**
+   * The apartment this fixture is in.
+   */
+  apartment: !Apartment
+
+  /**
+   * The measurements associated with this fixture.
+   */
+  bulbHistory: [SmartBulbToFixtureRelation](to)
+
+  /**
+   * The current bulb installed in this fixture.
+   */
+  currentBulb: SmartBulb
+}

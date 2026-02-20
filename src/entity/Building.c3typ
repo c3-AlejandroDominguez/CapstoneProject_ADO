@@ -1,0 +1,25 @@
+/**
+ * Single building entity type.
+ */
+entity type Building mixes FeatureEvaluatable schema name "BUILDING" {
+
+  /**
+   * City the building is at.
+   */
+  city: City
+
+  /**
+   * Collection field for apartments in the building.
+   */
+   apartments: [Apartment](building)
+
+  /**
+   * Latitude of the building location.
+   */
+   latitude: !double
+
+   /**
+    * Longitude of the building location.
+    */
+   longitude: !double
+}

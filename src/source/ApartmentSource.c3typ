@@ -1,0 +1,4 @@
+type ApartmentSource mixes Source {
+  id: string
+  building: string
+}

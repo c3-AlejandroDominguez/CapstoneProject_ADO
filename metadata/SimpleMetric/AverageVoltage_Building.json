@@ -1,0 +1,13 @@
+{
+  "id" : "AverageVoltage_Building",
+  "name" : "AverageVoltage",
+  "description" : "Calculates the average voltage for each building based on the smart bulbs data. It provides insights into the voltage levels across different buildings, allowing for comparisons and identification of trends in voltage.",
+  "srcType" : "Building",
+  "path" : "apartments.fixtures.bulbHistory.from.bulbMeasurements",
+  "expression" : "avg(avg(normalized.data.voltage))",
+  "cache": {
+    "intervals": ["HOUR","DAY", "MONTH"],
+    "monthsInPast": 4,
+    "monthsInFuture": 1
+  }
+}

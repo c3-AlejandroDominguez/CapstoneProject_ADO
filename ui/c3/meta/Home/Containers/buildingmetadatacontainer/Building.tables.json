@@ -1,0 +1,63 @@
+{
+  "type": "UiSdlConnected<UiSdlDataGrid>",
+  "component": {
+    "header": {
+      "title": "Building Metadata"
+    },
+    "paginationConfig": {
+      "pageSize": 5,
+      "pagination": true
+    },
+    "showSparkline": true, 
+    "reorderableColumns": false,
+    "filterBar": true,
+    "dataSpec": {
+      "dataType": "Building",
+      "columnFields": [
+        {
+          "fieldName": "id",
+          "label": "Building ID",
+          "sortable": true,
+          "searchable": true
+        },
+        {
+          "fieldName": "city.id",
+          "label": "City",
+          "sortable": true
+        },
+        {
+          "fieldName": "apartments.id",
+          "label": "Apartments in Building",
+          "sortable": true
+        },
+        {
+          "fieldName": "latitude",
+          "label": "Latitude",
+          "sortable": true
+        },
+        {
+          "fieldName": "longitude",
+          "label": "Longitude",
+          "sortable": true
+        }
+      ]
+    },
+      "rowActions": [
+      {
+        "type": "UiSdlDataGridRowAction",
+        "name": "Update Building Info",
+        "actionSuffix": "POPUP",
+        "iconSuffix": "grid-layout"
+      }
+    ]
+  },
+  "effectTriggers": [
+    {
+      "trigger": "Building.tables.ROW_ACTION_CLICK_POPUP",
+      "effectType": "UiSdlEpicShowUiSdlModal",
+      "payload": {
+        "modal": "capstoneproject.BuildingModalForm"
+      }
+    }
+  ]
+}

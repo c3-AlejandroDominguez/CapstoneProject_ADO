@@ -1,0 +1,4 @@
+type FixtureSource mixes Source {
+  id: string
+  apartment: string
+}

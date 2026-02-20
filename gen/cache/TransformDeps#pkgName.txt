@@ -1,0 +1,9 @@
+SmartBulbSource-INCANBulb: capstoneproject
+FixtureSource-Fixture: capstoneproject
+SmartBulbMeasurementSeriesSource-SmartBulbMeasurementSeries: capstoneproject
+SmartBulbSource-CFLBulb: capstoneproject
+SmartBulbMeasurementSource-SmartBulbMeasurement: capstoneproject
+ApartmentSource-Apartment: capstoneproject
+SmartBulbToFixtureRelationSource-SmartBulbToFixtureRelation: capstoneproject
+SmartBulbSource-LEDBulb: capstoneproject
+BuildingSource-Building: capstoneproject

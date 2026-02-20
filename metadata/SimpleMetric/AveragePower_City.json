@@ -1,0 +1,13 @@
+{
+  "id" : "AveragePower_City",
+  "name" : "AveragePower",
+  "description" : "Calculates the average power consumption for each city based on the smart bulbs data. It provides insights into the energy usage patterns across different cities, allowing for comparisons and identification of trends in power consumption.",
+  "srcType" : "City",
+  "path" : "buildings.apartments.fixtures.bulbHistory.from.bulbMeasurements",
+  "expression" : "avg(avg(normalized.data.power))",
+  "cache": {
+    "intervals": ["HOUR","DAY", "MONTH"],
+    "monthsInPast": 4,
+    "monthsInFuture": 1
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "id" : "AverageLumens_City",
+  "name" : "AverageLumensCity",
+  "description" : "Calculates the average lumens for each city based on the smart bulbs data. It provides insights into the brightness levels across different cities, allowing for comparisons and identification of trends in lumens output.",
+  "srcType" : "City",
+  "path" : "buildings.apartments.fixtures.bulbHistory.from.bulbMeasurements",
+  "expression" : "avg(avg(normalized.data.lumens))",
+  "cache": {
+    "intervals": ["HOUR","DAY", "MONTH"],
+    "monthsInPast": 4,
+    "monthsInFuture": 1
+  }
+}

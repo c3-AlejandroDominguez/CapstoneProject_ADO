@@ -1,0 +1,6 @@
+{
+  "id" : "DefectiveBulbCount",
+  "name" : "DefectiveBulbCount",
+  "description" : "Calculates the rolling sum of defective bulbs for each city based on the smart bulbs data. It provides insights into the trends of defective bulbs across different cities.",
+  "expression" : "rolling('SUM', max(eval('HOUR',IsDefective)))"
+}

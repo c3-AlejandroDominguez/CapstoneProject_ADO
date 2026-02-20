@@ -1,0 +1,16 @@
+{
+  "type": "UiSdlConnected<UiSdlContainer>",
+  "component": {
+    "title": "KPI's",
+    "orientation": "VERTICAL",
+    "children": [
+      {
+        "id": "capstoneproject.dropdownfiltercontainer"
+      },
+      {
+        "id": "capstoneproject.kpicontainers"
+      }
+    ]
+  },
+  "id": "capstoneproject.maincontainerkpis"
+}

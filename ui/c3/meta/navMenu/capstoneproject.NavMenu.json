@@ -1,0 +1,38 @@
+{
+  "type": "UiSdlConnected<UiSdlNavMenu>",
+  "component": {
+    "itemSections": [
+      {
+        "items": [
+          {
+            "type": "UiSdlNavMenuItem",
+            "id": "home",
+            "title": "Home",
+            "icon": "HOME",
+            "redirectRoute": {
+              "urlPath": "http://localhost:50081/aledominort/capstoneproject"
+            }
+          },
+          {
+            "type": "UiSdlNavMenuItem",
+            "id": "SmartBulbsInfo",
+            "title": "SmartBulbs General Info",
+            "icon": "INFO_CIRCLE",
+            "redirectRoute": {
+              "urlPath": "http://localhost:50081/aledominort/capstoneproject/SmartBulb/GeneralInfo"
+            }
+          },
+          {
+            "type": "UiSdlNavMenuItem",
+            "id": "BuildingInformation",
+            "title": "Info per Building",
+            "icon": "INFO_CIRCLE",
+            "redirectRoute": {
+              "urlPath": "http://localhost:50081/aledominort/capstoneproject/Building/Information"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

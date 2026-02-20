@@ -1,0 +1,67 @@
+{
+  "type": "UiSdlConnected<UiSdlForm>",
+  "component": {
+    "title": {
+      "title": "Building Information"
+    },
+    "subtitle": {
+      "title": "Update building details"
+    },
+    "submitDataSpec": {
+      "dataType": "Building",
+      "actionName": "merge",
+      "submitArgument": "this"
+    },
+    "clearOnCancel": true,
+    "width": 20,
+    "dataSpec": {
+      "dataType": "Building",
+      "fieldSets": {
+        "type": "[UiSdlFormFieldSet]",
+        "value": [
+          {
+            "type": "UiSdlFormFieldSet",
+            "fields": [
+              {
+                "inputElement": {
+                  "type": "UiSdlTextInput",
+                  "placeholder": "Enter building ID"
+                },
+                "fieldName": "id",
+                "label": "Building ID",
+                "required": true
+              },
+              {
+                "inputElement": {
+                  "type": "UiSdlTextInput",
+                  "placeholder": "Enter city ID"
+                },
+                "fieldName": "city",
+                "label": "City ID",
+                "required": true
+              },
+              {
+                "inputElement": {
+                  "type": "UiSdlNumberInput",
+                  "placeholder": "Enter latitude"
+                },
+                "fieldName": "latitude",
+                "label": "Latitude",
+                "required": true
+              },
+              {
+                "inputElement": {
+                  "type": "UiSdlNumberInput",
+                  "placeholder": "Enter longitude"
+                },
+                "fieldName": "longitude",
+                "label": "Longitude",
+                "required": true
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

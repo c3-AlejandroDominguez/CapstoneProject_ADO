@@ -1,0 +1,12 @@
+{
+  "type": "UiSdlConnected<UiSdlModal>",
+  "component": {
+      "header": {
+          "text": "Select City (Default is RWC)"
+        },
+        "modalType": {
+            "type": "UiSdlOneButtonModal",
+            "primaryButtonLabel": "Close"
+        }
+    }
+}

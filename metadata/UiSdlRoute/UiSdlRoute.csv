@@ -1,0 +1,4 @@
+targetModuleName,targetPageName,name,urlPath
+capstoneproject,HomePage,/,/
+capstoneproject,SmartBulbsInfo,/SmartBulb/GeneralInfo,/SmartBulb/GeneralInfo
+capstoneproject,BuildingInformation,/Building/Information,/Building/Information
