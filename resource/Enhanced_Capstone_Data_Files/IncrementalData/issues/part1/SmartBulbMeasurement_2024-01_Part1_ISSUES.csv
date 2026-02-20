@@ -1,6 +1,0 @@
-SN,timestamp,end,Status,Watts,Lumens,Temp,Voltage
-SMBLB7,invalid_datetime,2024-01-23 23:00:00,-1,11.93,411.08,69.75,128
-SMBLB14,invalid_datetime,2024-01-08 19:00:00,-1,19.33,572.58,73.89,128
-SMBLB18,invalid_datetime,2024-01-26 11:00:00,-1,7.97,403.01,88.37,126
-SMBLB23,invalid_datetime,2024-01-11 07:00:00,-1,18.06,399.31,82.8,122
-SMBLB25,invalid_datetime,2024-01-24 19:00:00,-1,7.54,567.71,75.85,114
