@@ -1,1 +1,0 @@
-SmartBulb: ["SmartBulbToFixtureRelation","SmartBulb","SmartBulbMeasurementSeries","City","Building","Apartment","Fixture"]

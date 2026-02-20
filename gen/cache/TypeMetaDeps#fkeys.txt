@@ -1,6 +1,0 @@
-Building: ["Apartment"]
-SmartBulb: ["SmartBulbMeasurementSeries","SmartBulbToFixtureRelation"]
-City: ["Building"]
-Fixture: ["SmartBulbToFixtureRelation"]
-Apartment: ["Fixture"]
-SmartBulbMeasurementSeries: ["SmartBulbMeasurement"]

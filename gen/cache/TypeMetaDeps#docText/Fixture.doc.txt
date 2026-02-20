@@ -1,1 +1,0 @@
-Light fixture that a single @link SmartBulb @endlink can be installed into.

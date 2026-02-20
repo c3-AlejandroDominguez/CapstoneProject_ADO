@@ -1,1 +1,0 @@
-Single building entity type.

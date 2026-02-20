@@ -1,2 +1,0 @@
-Represents the relationship between a SmartBulb and a Fixture over a time period.
-Tracks which bulb was installed in which fixture and when.

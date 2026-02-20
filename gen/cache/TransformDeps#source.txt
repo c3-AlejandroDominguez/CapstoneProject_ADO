@@ -1,9 +1,0 @@
-SmartBulbSource-INCANBulb: SmartBulbSource
-FixtureSource-Fixture: FixtureSource
-SmartBulbMeasurementSeriesSource-SmartBulbMeasurementSeries: SmartBulbMeasurementSeriesSource
-SmartBulbSource-CFLBulb: SmartBulbSource
-SmartBulbMeasurementSource-SmartBulbMeasurement: SmartBulbMeasurementSource
-ApartmentSource-Apartment: ApartmentSource
-SmartBulbToFixtureRelationSource-SmartBulbToFixtureRelation: SmartBulbToFixtureRelationSource
-SmartBulbSource-LEDBulb: SmartBulbSource
-BuildingSource-Building: BuildingSource

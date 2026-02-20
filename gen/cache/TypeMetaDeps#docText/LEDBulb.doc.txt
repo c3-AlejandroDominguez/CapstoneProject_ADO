@@ -1,1 +1,0 @@
-Represents an LED smart bulb extending the SmartBulb type.
