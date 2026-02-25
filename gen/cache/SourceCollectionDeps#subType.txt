@@ -1,0 +1,8 @@
+ApartmentSource: FileSourceCollection
+SmartBulbToFixtureRelationSource: FileSourceCollection
+FixtureSource: FileSourceCollection
+SmartBulbMeasurementSource: FileSourceCollection
+SmartBulbMeasurementSeriesSource: FileSourceCollection
+SmartBulbSource: FileSourceCollection
+BuildingSource: FileSourceCollection
+CitySource: FileSourceCollection

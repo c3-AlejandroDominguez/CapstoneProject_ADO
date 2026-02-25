@@ -64,7 +64,17 @@ extendable entity type SmartBulb mixes FeatureEvaluatable schema name "SMART_BUL
     bulbStatus : int stored calc exists(bulbMeasurements) ? bulbMeasurements[0].lastStatus : null
 
 
+    /**
+     * The electricity rate (in dollars per kWh) for the city where this bulb is currently installed.
+     * Retrieved from the {@link CityRateConfig} associated with the current fixture's location.
+     * Returns null if the bulb is not currently installed in a fixture.
+     */
     electricityRate: double stored calc exists(currentFixture) ? currentFixture.apartment.building.city.electricityRate: null 
 
+    /**
+     * The name of the city where this bulb is currently installed.
+     * Retrieved from the current fixture's location hierarchy.
+     * Returns null if the bulb is not currently installed in a fixture.
+     */
     currentCity: string stored calc exists(currentFixture) ? currentFixture.apartment.building.city.name: null 
 }

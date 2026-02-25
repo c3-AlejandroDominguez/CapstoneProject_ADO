@@ -1,0 +1,8 @@
+ApartmentSource: capstoneproject
+SmartBulbToFixtureRelationSource: capstoneproject
+FixtureSource: capstoneproject
+SmartBulbMeasurementSource: capstoneproject
+SmartBulbMeasurementSeriesSource: capstoneproject
+SmartBulbSource: capstoneproject
+BuildingSource: capstoneproject
+CitySource: capstoneproject

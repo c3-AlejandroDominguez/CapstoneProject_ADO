@@ -13,9 +13,22 @@
       "submitArgument": "this"
     },
     "clearOnCancel": true,
-    "width": 20,
+    "width": 100,
     "dataSpec": {
       "dataType": "Building",
+      "actionName": "get",
+      "contextVars": {
+        "buildingId": {
+          "type": "UiSdlApplicationStateValueParam",
+          "id": "capstoneproject.UiSdlApplicationStateSB",
+          "path": "rowRecord"
+        }
+      },
+      "args": {
+        "this": {
+          "id": "${buildingId}"
+        }
+      },
       "fieldSets": {
         "type": "[UiSdlFormFieldSet]",
         "value": [
@@ -25,38 +38,47 @@
               {
                 "inputElement": {
                   "type": "UiSdlTextInput",
-                  "placeholder": "Enter building ID"
+                  "placeholder": "Update which city the building is located in"
                 },
-                "fieldName": "id",
-                "label": "Building ID",
-                "required": true
-              },
-              {
-                "inputElement": {
-                  "type": "UiSdlTextInput",
-                  "placeholder": "Enter city ID"
-                },
+                "dataPropSpecs": [
+                  {
+                    "prop": "value",
+                    "dataPath": "city.id"
+                  }
+                ],
                 "fieldName": "city",
                 "label": "City ID",
-                "required": true
+                "required": false
               },
               {
                 "inputElement": {
                   "type": "UiSdlNumberInput",
-                  "placeholder": "Enter latitude"
+                  "placeholder": "Update latitude"
                 },
+                "dataPropSpecs": [
+                  {
+                    "prop": "value",
+                    "dataPath": "latitude"
+                  }
+                ],
                 "fieldName": "latitude",
                 "label": "Latitude",
-                "required": true
+                "required": false
               },
               {
                 "inputElement": {
                   "type": "UiSdlNumberInput",
-                  "placeholder": "Enter longitude"
+                  "placeholder": "Update longitude"
                 },
+                "dataPropSpecs": [
+                  {
+                    "prop": "value",
+                    "dataPath": "longitude"
+                  }
+                ],
                 "fieldName": "longitude",
                 "label": "Longitude",
-                "required": true
+                "required": false
               }
             ]
           }

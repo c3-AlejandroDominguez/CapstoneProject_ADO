@@ -1,0 +1,7 @@
+Building: {City: DeclaredReferenceType, Apartment: ArrayType}
+SmartBulb: {SmartBulbToFixtureRelation: ArrayType, Fixture: DeclaredReferenceType, SmartBulbMeasurementSeries: ArrayType}
+SmartBulbToFixtureRelation: {SmartBulb: DeclaredReferenceType, Fixture: DeclaredReferenceType}
+City: {Building: ArrayType}
+Fixture: {SmartBulb: DeclaredReferenceType, SmartBulbToFixtureRelation: ArrayType, Apartment: DeclaredReferenceType}
+Apartment: {Building: DeclaredReferenceType, Fixture: ArrayType}
+SmartBulbMeasurementSeries: {SmartBulb: DeclaredReferenceType}

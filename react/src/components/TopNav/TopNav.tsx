@@ -15,8 +15,8 @@ interface TopNavProps {
 export default function TopNav({ title }: TopNavProps) {
   return (
     <div className="sticky top-0 z-30 bg-primary flex w-full" style={{ minHeight: '32px' }}>
-      <div className="flex flex-1 items-center pl-8 md:pl-4 border-b border-weak">
-        <h2 className="text-base">{title}</h2>
+      <div className="flex flex-1 items-center justify-center border-b border-weak px-4">
+        <h1 className="text-2xl md:text-3xl font-semibold text-center">{title}</h1>
       </div>
     </div>
   );

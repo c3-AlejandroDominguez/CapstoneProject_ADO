@@ -22,7 +22,7 @@ export const navigationConfig: NavigationItem[] = [
     id: 'demo',
     path: '/',
     icon: faHouse,
-    label: 'Demo',
+    label: 'Home',
     tooltip: 'Dashboard Overview'
   },
   // Example new navigation item - delete this comment and the lines below to add a new navigation item

@@ -1,0 +1,1 @@
+{"properties":{"batchSize":{"description":"Fill in field description here.","type":"number"},"files":{"description":null,"type":"array","items":{}},"type":{"description":"Metadata type name.","type":"string"}},"type":"object","title":"Fill in type description here.","name":"BatchJobSmartBulbMeasurementOptions","required":[],"additionalProperties":false}

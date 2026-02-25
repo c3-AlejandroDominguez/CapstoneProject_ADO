@@ -1,13 +1,9 @@
 {
   "type": "UiSdlConnected<UiSdlModal>",
   "component": {
-    "size": "FULLSCREEN",
-    "header": {
-      "text": "Update Building Info"
-    },
+    "size": "SMALL",
     "modalType": {
-      "type": "UiSdlOneButtonModal",
-      "primaryButtonLabel": "Close"
+      "type": "UiSdlOneButtonModal"
     },
     "children": [
       {

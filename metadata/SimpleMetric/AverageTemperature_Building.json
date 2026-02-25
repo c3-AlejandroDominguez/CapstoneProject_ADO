@@ -7,7 +7,7 @@
   "expression" : "avg(avg(normalized.data.temperature))",
   "cache": {
     "intervals": ["HOUR","DAY", "MONTH"],
-    "monthsInPast": 4,
-    "monthsInFuture": 1
+    "monthsInPast": 1,
+    "monthsInFuture": 6
   }
 }

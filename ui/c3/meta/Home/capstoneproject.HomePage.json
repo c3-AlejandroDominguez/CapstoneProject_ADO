@@ -1,5 +1,9 @@
 {
   "type": "UiSdlConnected<UiSdlGridLayout>",
+  "applicationStateRef": {
+    "id": "capstoneproject.UiSdlApplicationStateSB",
+    "type" : "UiSdlApplicationStateRef"
+  },
   "component": {
     "navMenu": {
       "id": "capstoneproject.NavMenu"

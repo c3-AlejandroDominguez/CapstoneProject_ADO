@@ -8,7 +8,6 @@
       "pageSize": 5,
       "pagination": true
     },
-    "showSparkline": true, 
     "reorderableColumns": false,
     "filterBar": true,
     "dataSpec": {
@@ -56,8 +55,27 @@
       "trigger": "Building.tables.ROW_ACTION_CLICK_POPUP",
       "effectType": "UiSdlEpicShowUiSdlModal",
       "payload": {
-        "modal": "capstoneproject.BuildingModalForm"
-      }
+        "modal": "capstoneproject.BuildingModalForm",
+        "applicationStateForPayload": {
+          "id": "capstoneproject.UiSdlApplicationStateSB",
+          "trigger": "capstoneproject.UiSdlApplicationStateSB.ROW_RECORD_STORE"
+        }
+      },
+      "payloadStrategy": "MERGE"
+    },
+    {
+      "trigger": "capstoneproject.UiSdlApplicationStateSB.ROW_RECORD_STORE",
+      "actions": [
+        {
+          "type": "capstoneproject.UiSdlApplicationStateSB.UPDATE",
+          "payload": {
+            "rowRecord": {
+              "type": "UiSdlActionPayloadParam",
+              "path": "payload.obj.id"
+            }
+          }
+        }
+      ]
     }
   ]
 }

@@ -1,0 +1,1 @@
+[{"fileUrl":"meta://capstoneproject/seed/Apartment/Apartment.csv","severity":"WARNING","message":"Ensure that only seed files are in the 'seed' subdirectory. Your target type Apartment has category 'data' and should accordingly be moved under a subdirectory named 'data'.\nThis WARNING will become ERROR in release 8.6. Fix it now to avoid disruptions."}]
